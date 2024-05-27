@@ -32,7 +32,7 @@ const Login = () => {
                     <NavLink to={dashboard} className="solid-green-btn login-btn">Login</NavLink>
                 </div>
                 <div className="redirect-para">
-                    <NavLink to={forgotpassword} className="link">Forgot Password?</NavLink>
+                    <NavLink to="/" className="link">Forgot Password?</NavLink>
                 </div>
             </form>
         </div>

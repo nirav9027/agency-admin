@@ -450,7 +450,7 @@ const Dashboard = () => {
                         return(
                             <>
                             <li className="discover-pro-box" key={i}>
-                            <Link to={viewdetails}>
+                            <Link to="/">
                             <div className="discover-image-box">
                                 <img src={prodetails.img} alt="pro-panel-image" />
                             </div>
