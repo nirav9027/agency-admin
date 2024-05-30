@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { dashboard, forgotpassword, login, signup } from '../../config/routConst'
+import { dashboard, login, signup } from '../../config/routConst'
 import { NavLink } from 'react-router-dom'
 
 const Login = () => {
@@ -32,7 +32,7 @@ const Login = () => {
                     <NavLink to={dashboard} className="solid-green-btn login-btn">Login</NavLink>
                 </div>
                 <div className="redirect-para">
-                    <NavLink to="/" className="link">Forgot Password?</NavLink>
+                    <NavLink to="/forgot-password" className="link">Forgot Password?</NavLink>
                 </div>
             </form>
         </div>

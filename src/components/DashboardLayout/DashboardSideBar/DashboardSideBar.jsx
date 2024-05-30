@@ -18,52 +18,52 @@ const DashboardSideBar = () => {
     {
       iconName : "profile-icon",
       title : "Profile",
-      URL : profile,
+      URL : "/",
     },
     {
       iconName : "contracts-icon",
       title : "Contracts",
-      URL : contracts,
+      URL : "/",
     },
     {
       iconName : "rules-icon",
       title : "Rules",
-      URL : rules,
+      URL : "/",
     },
     {
       iconName : "withdrawals-icon",
       title : "Withdrawals",
-      URL : withdrawals,
+      URL : "/",
     },
     {
       iconName : "leaderboard-icon",
       title : "Leaderboard",
-      URL : leaderboard,
+      URL : "/",
     },
     {
       iconName : "economic-calendar-icon",
       title : "Economic Calendar",
-      URL : economiccalendar,
+      URL : "/",
     },
     {
       iconName : "announcements-icon",
       title : "Announcements",
-      URL : announcements,
+      URL : "/",
     },
     {
       iconName : "competitions-icon",
       title : "Competitions",
-      URL : competitions,
+      URL : "/",
     },
     {
       iconName : "affiliate-icon",
       title : "Affiliate Portal",
-      URL : affiliateportal,
+      URL : "/",
     },
     {
       iconName : "utilities-icon",
       title : "Utilities",
-      URL : utilities,
+      URL : "/",
     }
 ]
   return (

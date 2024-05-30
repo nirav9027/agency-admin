@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import DownArrow from '../../../assets/images/icon-down-arrow.svg'
-import { login, newchallenge } from '../../../config/routConst'
+import { login } from '../../../config/routConst'
 import { NavLink } from 'react-router-dom'
 
 const DashboardHeader = () => {
@@ -24,7 +24,7 @@ const DashboardHeader = () => {
           <h2 className="p-16">Dashboard</h2>
         </div>
         <div className="header-right-content">
-          <NavLink to={newchallenge} className="challange-btn">
+          <NavLink to="/" className="challange-btn">
             <span className="icon">
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.43176" y="1.5" width="15" height="15" rx="3.75" stroke="white" stroke-width="1.125" />

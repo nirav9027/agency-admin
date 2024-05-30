@@ -1,3 +1,5 @@
 export const login = '/'
 export const signup = '/signup'
 export const dashboard = '/dashboard'
+export const forgotpassword = '/forgot-password'
+export const resetpassword = '/reset-password'

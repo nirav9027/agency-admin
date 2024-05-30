@@ -11,7 +11,7 @@ import NotificationBlueTickIcon from '../../assets/images/icon-blue-tick-mark.sv
 import DownArrowIcon from '../../assets/images/icon-arrow-select.svg'
 import ClockIcon from '../../assets/images/icon-clock.svg'
 import { Link } from 'react-router-dom'
-import { announcements, viewdetails } from '../../config/routConst'
+// import { announcements, viewdetails } from '../../config/routConst'
 const Dashboard = () => {
     const [SummaryActive, setSummaryActive] = useState(1);
     const [overviewActive , SetoverviewActive] = useState(1);
@@ -435,65 +435,6 @@ const Dashboard = () => {
                             <i className='next-btn-icon'></i>
                             </a>
                         </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div className="dashboard-advertisement-content">
-            <div className="discover-wrapper bg-white">
-            <div className="title-wrap">
-                    <h4>Discover Pro</h4>
-                    <Link to={announcements}>View All</Link>
-                </div>
-                <ul className='pro-content-wrapper'>
-                    {DiscoverProContent.map((prodetails,i) =>{
-                        return(
-                            <>
-                            <li className="discover-pro-box" key={i}>
-                            <Link to="/">
-                            <div className="discover-image-box">
-                                <img src={prodetails.img} alt="pro-panel-image" />
-                            </div>
-                            <div className="discover-content">
-                                <p>{prodetails.title}</p>
-                                <p className='date'>
-                                    <i className='calender-iconn'></i>
-                                    {prodetails.date}</p>
-                            </div>
-                            </Link>
-                    </li>
-                            </>
-                        )
-                    })}
-                </ul>
-            </div>
-            <div className="notification-list-wrapper bg-white mt-30">
-                <div className="title-wrap">
-                    <h4>Notification</h4>
-                    <a href="javascript:;">View All</a>
-                </div>
-                <div className="notifications-wrapper">
-                    <ul>
-                        {NotificationContent.map((Notification,i) =>{
-                            return(
-                                <>
-                                <li className="notification-box">
-                                    <div className='notification-image-box'>
-                                        <img src={NotificationIMage} alt="NotificationIMage" />
-                                    </div>
-                                    <div className='notification-content'>
-                                        <div className='title'>
-                                        <h5>{Notification.title} <img src={NotificationBlueTickIcon} alt="blue-tick-icon" /></h5>
-                                        </div>
-                                        <a href="javascript:;" className='user-link'>{Notification.id}</a>
-                                    <p>{Notification.paraLinks}</p>
-                                    <p className="date"><img src={ClockIcon} alt="icon-clock" /> {Notification.date}</p>
-                                    </div>
-                                </li>
-                                </>
-                            )
-                        })}
-
                     </ul>
                 </div>
             </div>

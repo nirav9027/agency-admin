@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { dashboard, login, signup } from '../../config/routConst'
 import { NavLink } from 'react-router-dom'
 
 const SignUp = () => {
+    const [password, setPassword] = useState(false)
+    const [confirmPassword, setConfirmPassword] = useState(false)
   return (
     <>
        <ul className="login-tab-menu">
@@ -52,17 +54,21 @@ const SignUp = () => {
                     <div className="input-wrapper">
                         <label for="">Password</label>
                         <div className="password-wrapper">
-                            <input type="password" placeholder="Enter password" value="123456" />
-                            <button type="button" className="toggle-password"></button>
-                        </div>
+                        <input 
+                        type={password===true ? "text":"password"}
+                        placeholder="Enter temporary password" value="123456" />
+                        <button type="button" className={`toggle-password ${password===true ? "show-hide-password":""}`} onClick={()=>{setPassword(!password)}}></button>
+                    </div>
                         <span className="error" style={{display : 'none'}}>Please enter password</span>
                     </div>
                     <div className="input-wrapper">
                         <label for="">Confirm Password</label>
                         <div className="password-wrapper">
-                            <input type="password" placeholder="Enter password" value="123456" />
-                            <button type="button" className="toggle-password"></button>
-                        </div>
+                        <input 
+                        type={confirmPassword===true ? "text":"password"}
+                        placeholder="Enter temporary password" value="123456" />
+                        <button type="button" className={`toggle-password ${confirmPassword===true ? "show-hide-password":""}`} onClick={()=>{setConfirmPassword(!confirmPassword)}}></button>
+                    </div>
                         <span className="error" style={{display : 'none'}}>Please enter password</span>
                     </div>
                 </div>
