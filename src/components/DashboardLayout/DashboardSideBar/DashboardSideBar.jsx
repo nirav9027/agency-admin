@@ -1,8 +1,8 @@
 import React from 'react'
-import SiteLogo from '../../../assets/images/site-logo.svg'
-import SiteLogoCollapse from '../../../assets/images/topone-trader-logo.svg'
+import SiteLogo from '../../../assets/images/logo.svg'
+import SiteLogoCollapse from '../../../assets/images/logo-icon.svg'
 import IconColse from '../../../assets/images/icon-cross.svg'
-import { affiliateportal, announcements, competitions, contracts, dashboard, economiccalendar, leaderboard, profile, rules, utilities, withdrawals } from '../../../config/routConst'
+import { dashboard , profile , contracts } from '../../../config/routConst'
 import { NavLink } from 'react-router-dom'
 
 const DashboardSideBar = () => {
@@ -18,52 +18,12 @@ const DashboardSideBar = () => {
     {
       iconName : "profile-icon",
       title : "Profile",
-      URL : "/",
+      URL : profile,
     },
     {
       iconName : "contracts-icon",
       title : "Contracts",
-      URL : "/",
-    },
-    {
-      iconName : "rules-icon",
-      title : "Rules",
-      URL : "/",
-    },
-    {
-      iconName : "withdrawals-icon",
-      title : "Withdrawals",
-      URL : "/",
-    },
-    {
-      iconName : "leaderboard-icon",
-      title : "Leaderboard",
-      URL : "/",
-    },
-    {
-      iconName : "economic-calendar-icon",
-      title : "Economic Calendar",
-      URL : "/",
-    },
-    {
-      iconName : "announcements-icon",
-      title : "Announcements",
-      URL : "/",
-    },
-    {
-      iconName : "competitions-icon",
-      title : "Competitions",
-      URL : "/",
-    },
-    {
-      iconName : "affiliate-icon",
-      title : "Affiliate Portal",
-      URL : "/",
-    },
-    {
-      iconName : "utilities-icon",
-      title : "Utilities",
-      URL : "/",
+      URL : contracts,
     }
 ]
   return (

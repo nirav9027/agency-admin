@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import SiteLogo from '../../assets/images/site-logo.svg'
+import SiteLogo from '../../assets/images/logo.svg'
 
 const LoginLayout = () => {
   return (
