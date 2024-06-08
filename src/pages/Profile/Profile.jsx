@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import OfferImage from '../../assets/images/offer-image.png'
 
 const Profile = () => {
   const [isActive, setisActive] = useState(1);
